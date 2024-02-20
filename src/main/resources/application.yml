@@ -1,0 +1,53 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /app
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: DEBUG
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: wpossecommerce@gmail.com
+    password: tytilastpyeynsoo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  datasource:
+    username: default
+    password: 6G9sQHtySjId
+    url: jdbc:postgresql://ep-blue-tree-a464os3n.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          charset_name: UTF-8
+          import_files: sql/documentType.sql,sql/user.sql,sql/role.sql,sql/module.sql,sql/permission.sql
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
+settings:
+  auth:
+    token-time: 30
+    time-resent-email: 30
+  encryption:
+    aes:
+      key: p1u8BUk3s2LMpiipOt0H2&kI8691oWG5
+      iv: 7i3N42ATc
+  application:
+    name: CinelLeonelda
