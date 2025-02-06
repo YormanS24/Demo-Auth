@@ -53,7 +53,7 @@ public class EmailServiceImpl implements EmailService {
             }
             return message;
         }catch (MessagingException ex) {
-            throw new IllegalArgumentException("v");
+            throw new IllegalArgumentException("no es posible enviar el email", ex);
         }
     }
 
