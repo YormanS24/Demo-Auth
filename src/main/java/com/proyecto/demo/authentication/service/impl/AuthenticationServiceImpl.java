@@ -54,7 +54,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         this.refreshTokenShared = refreshTokenShared;
     }
 
-
     @Override
     public LoginResponse login(LoginRequest request) {
 
