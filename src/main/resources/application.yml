@@ -2,6 +2,10 @@ server:
   port: 8080
   servlet:
     context-path: /app
+  compression:
+    enabled: true
+    min-response-size: 1024
+    mime-types: application/json,application/xml
 #logging:
 #  level:
 #    org:
